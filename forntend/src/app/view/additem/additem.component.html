@@ -1,0 +1,61 @@
+
+
+  <div class="container">
+     <div class="col-md-12">
+       <div class="panel with-nav-tabs panel-primary">
+ 
+             <div class="tab-pane fade" id="Tabs-Kedua">
+               <div class="row">
+                 <form action="multiupload.php" method="post" enctype="multipart/form-data">
+                     <div class="col-md-6">
+                         <input type="file" class="form-control" id="images" name="images[]" onchange="preview_images();" multiple/>
+                     </div>
+                     <div class="col-md-6">
+                         <input type="submit" class="btn btn-primary" name='submit_image' value="Upload Multiple Image"/>
+                     </div>
+                 </form>
+               </div><br><br>
+               <div class="row" id="image_preview"></div><br><br>
+             </div>
+ 
+             <div class="tab-pane fade" id="Tabs-Ketiga">
+               <div class="col-md-12">
+                 <!-- untuk backend actionnya ditunjukan ke mana -->
+                 <form method="POST" action="#">
+                   <div class="form-group files">
+                     <label>Upload Your File </label>
+                     <input type="file" class="form-control" multiple="">
+                   </div>
+                   <div class="col-md-12">
+                     <button type="button" class="btn btn-labeled btn-success pull-right">
+                       <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Save
+                     </button>
+                   </div>
+                 </form>
+               </div>
+             </div>
+ 
+             <div class="tab-pane fade in active" id="Tabs-Keempat">
+               <!-- disini maksudnya in active yaitu mengaktifkan file yg ditampilkan untuk pertamakali -->
+               <div class="col-md-12">
+                 <form method="POST" action="#">
+                   <div class="form-group files color">
+                     <label>Upload Your File </label>
+                     <input type="file" class="form-control" multiple="">
+                   </div>
+                   <div class="col-md-12">
+                     <button type="button" class="btn btn-labeled btn-success pull-right">
+                       <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Save
+                     </button>
+                   </div>
+                 </form>
+               </div>
+             </div>
+ 
+           </div>
+         </div>
+ 
+       </div>
+     </div>
+   </div>
+

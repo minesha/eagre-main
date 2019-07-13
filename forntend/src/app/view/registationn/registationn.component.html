@@ -1,0 +1,18 @@
+<div id="login-box">
+  <div class="left">
+    <h1>Sign up</h1>
+    <form #frmLogin="ngForm" action="" method="post">
+    <input type="text" name="userName" [(ngModel)]="registationDto.userName"  id="userName" placeholder="Username" />
+    <input type="text" name="email" [(ngModel)]="registationDto.email"  id="email" placeholder="E-mail" />
+    <input type="password" name="pasword" [(ngModel)]="registationDto.pasword"  id="pasword" placeholder="Password" />
+    <input type="password" [(ngModel)]="cPassword" name="password2" placeholder="Retype password" />
+    <p *ngIf="passwordMatch" style="color: red">password is not match</p>
+  </form>
+    <input type="submit" name="signup_submit" (click)="save()" value="Sign me up" />
+  </div>
+  
+  <div class="right">
+   
+  </div>
+  <div class="or">OR</div>
+</div>
